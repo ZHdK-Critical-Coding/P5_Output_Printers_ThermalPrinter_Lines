@@ -10,21 +10,25 @@ Ausgangspunkt, um Text auf einem Bondrucker auszugeben.
 
 ## Installation
 
-Voraussetzungen: ein Thermodrucker-Server, der JSON-Textbefehle per
-WebSocket annimmt, mit `ok` antwortet und im Netzwerk deines Computers
-erreichbar ist.
-
-In `sketch.js` `printerConnection` auf die Adresse des Servers setzen
-(Standard `ws://10.21.8.225:8080`).
-
 Bibliotheken (in `libraries/`): p5.js 1.10.0, p5.sound 1.0.1 (eingebunden,
 nicht verwendet).
 
 Lizenz: MIT
 
+## Server
+
+Braucht `printer-websockets` aus
+[Servers_RaspberriPi](https://github.com/ZHdK-Critical-Coding/Servers_RaspberriPi)
+(WebSocket, Port 8080), auf einem Raspberry Pi mit einem
+ESC/POS-Thermodrucker an USB, im selben Netzwerk wie dein Computer. Zuerst
+im Ordner mit `bash run.sh` (oder `node printer.js`) starten. Er druckt
+JSON-Textbefehle und Bilder und antwortet mit `ok`. In `sketch.js`
+`printerConnection` auf seine Adresse setzen (Standard
+`ws://10.21.8.225:8080`).
+
 ## Ausführen
 
-1. Sicherstellen, dass der Drucker-Server läuft.
+1. Sicherstellen, dass der Drucker-Server läuft (siehe Server).
 2. Den Ordner in Visual Studio Code öffnen und Live Server starten (in der
    Statusleiste auf **Go Live** klicken).
 3. Text ins Textfeld schreiben und auf **Print** klicken.

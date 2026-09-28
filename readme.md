@@ -10,20 +10,23 @@ printer.
 
 ## Installation
 
-Requirements: a thermal printer server that accepts JSON text commands
-over WebSocket and answers with `ok`, reachable from your computer's
-network.
-
-Set `printerConnection` in `sketch.js` to the server address (default
-`ws://10.21.8.225:8080`).
-
 Libraries (in `libraries/`): p5.js 1.10.0, p5.sound 1.0.1 (included, not used).
 
 License: MIT
 
+## Server
+
+Needs `printer-websockets` from
+[Servers_RaspberriPi](https://github.com/ZHdK-Critical-Coding/Servers_RaspberriPi)
+(WebSocket, port 8080), running on a Raspberry Pi with an ESC/POS thermal
+printer on USB, in the same network as your computer. Start it first with
+`bash run.sh` (or `node printer.js`) in its folder. It prints JSON text
+commands and images and answers with `ok`. Set `printerConnection` in
+`sketch.js` to its address (default `ws://10.21.8.225:8080`).
+
 ## How to Run
 
-1. Make sure the printer server is running.
+1. Make sure the printer server is running (see Server).
 2. Open the folder in Visual Studio Code and start Live Server (click
    **Go Live** in the status bar).
 3. Type into the text field and click **Print**.
