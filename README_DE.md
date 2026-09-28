@@ -14,19 +14,22 @@ Voraussetzungen: ein Thermodrucker-Server, der JSON-Textbefehle per
 WebSocket annimmt, mit `ok` antwortet und im Netzwerk deines Computers
 erreichbar ist.
 
-1. Sicherstellen, dass der Drucker-Server läuft.
-2. In `sketch.js` `printerConnection` auf die Adresse des Servers setzen
-   (Standard `ws://10.21.8.225:8080`).
-3. Den Ordner in Visual Studio Code öffnen und Live Server starten (in der
-   Statusleiste auf **Go Live** klicken).
-4. Text ins Textfeld schreiben und auf **Print** klicken.
-
-Der Verbindungsstatus wird auf der Zeichenfläche angezeigt.
+In `sketch.js` `printerConnection` auf die Adresse des Servers setzen
+(Standard `ws://10.21.8.225:8080`).
 
 Bibliotheken (in `libraries/`): p5.js 1.10.0, p5.sound 1.0.1 (eingebunden,
 nicht verwendet).
 
 Lizenz: MIT
+
+## Ausführen
+
+1. Sicherstellen, dass der Drucker-Server läuft.
+2. Den Ordner in Visual Studio Code öffnen und Live Server starten (in der
+   Statusleiste auf **Go Live** klicken).
+3. Text ins Textfeld schreiben und auf **Print** klicken.
+
+Der Verbindungsstatus wird auf der Zeichenfläche angezeigt.
 
 ## Coding-Hilfe
 

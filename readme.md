@@ -14,18 +14,21 @@ Requirements: a thermal printer server that accepts JSON text commands
 over WebSocket and answers with `ok`, reachable from your computer's
 network.
 
-1. Make sure the printer server is running.
-2. Set `printerConnection` in `sketch.js` to the server address (default
-   `ws://10.21.8.225:8080`).
-3. Open the folder in Visual Studio Code and start Live Server (click
-   **Go Live** in the status bar).
-4. Type into the text field and click **Print**.
-
-The connection status is shown on the canvas.
+Set `printerConnection` in `sketch.js` to the server address (default
+`ws://10.21.8.225:8080`).
 
 Libraries (in `libraries/`): p5.js 1.10.0, p5.sound 1.0.1 (included, not used).
 
 License: MIT
+
+## How to Run
+
+1. Make sure the printer server is running.
+2. Open the folder in Visual Studio Code and start Live Server (click
+   **Go Live** in the status bar).
+3. Type into the text field and click **Print**.
+
+The connection status is shown on the canvas.
 
 ## Coding Help
 
